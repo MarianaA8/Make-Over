@@ -11,9 +11,10 @@ html {
 }
 
 body {
-	font-family: "Annie Use Your Telescope";
+	font-family: "Chelsea Market";
 	font-size: 1.2rem;
 	min-height: 100%;
+	background-color: #fad586;
 }
 
 .grid-container > * {
@@ -22,29 +23,29 @@ body {
 	padding: 10px;
 	text-align: center;
 }
-.header {
-	grid-area: header;
+header {
+	grid-area: H;
 	background-color: #98ddca;
 }
 
-.navbar {
-	grid-area: navbar;
+nav {
+	grid-area: N;
 	background-color: #d5ecc2;
 }
 
-.sidebar {
-	grid-area: sidebar;
+aside {
+	grid-area: A;
 	background-color: #ffd3b4;
 }
 
-.main {
-	grid-area: main;
+section {
+	grid-area: S;
 	background-color: #ffaaa7;
 }
 
-.footer {
-	grid-area: footer;
-	background-color: #f8ede3;
+footer {
+	grid-area: F;
+	background-color: #ead3cb;
 }
 
 
@@ -52,11 +53,11 @@ body {
 	display: grid;
 	grid-gap: 10px;
 	grid-template:
-		"header"  100px
-		"navbar"  50px
-		"main" 	  auto
-		"sidebar" 100px
-		"footer"  100px;
+		"H"  100px
+		"N"  50px
+		"S"  auto
+		"A"  100px
+		"F"  100px;
 }
 
 @media (min-width: 600px) {
@@ -64,10 +65,10 @@ body {
 		/*grid-template-columns: 200px auto;
 		grid-template-rows: 100px 50px auto 100px;*/
 		grid-template:
-		"header header" 100px
-		"navbar navbar" 50px
-		"sidebar main" auto
-		"footer footer" 100px/
+		"H H" 100px
+		"N N" 50px
+		"A S" auto
+		"F F" 100px/
 		200px	auto;
 	}
 }
@@ -75,10 +76,10 @@ body {
 @media (min-width: 900px) {
 	.grid-container {
 		grid-template:
-		"header header header" 100px
-		"navbar main sidebar" auto
-		"footer footer footer" 100px/
-		200px	auto 200px;
+		"H H H" 100px
+		"N S A" auto
+		"F F F" 100px/
+		200px auto 200px;
 	}
 }
 

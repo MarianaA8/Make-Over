@@ -75,7 +75,7 @@ footer {
 
 @media (min-width: 900px) {
 	.grid-container {
-		grid-template:
+		grid-template: 
 		"H H H" 100px
 		"N S A" auto
 		"F F F" 100px/
